@@ -1,0 +1,45 @@
+@font-face {
+    font-family: inter;
+    src: url(/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --soft-orange:hsl(35, 77%, 62%);
+    --soft-red:hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233. 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+    --text-font-size: 15px;
+}
+body{
+    font-family: inter;
+    font-size: var(--text-font-size);
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+.section-padding{
+    padding: 20px 100px 10px 100px;
+}
+nav{
+    display: flex;
+    gap:1rem;
+}
+nav p a{
+    color: var(--dark-grayish-blue);
+    cursor: pointer;
+}
+nav p a:hover{
+    color: var(--soft-orange);
+}
