@@ -14,7 +14,7 @@ a{
     --soft-orange:hsl(35, 77%, 62%);
     --soft-red:hsl(5, 85%, 63%);
     --off-white: hsl(36, 100%, 99%);
-    --grayish-blue: hsl(233. 8%, 79%);
+    --grayish-blue: hsl(233, 8%, 79%);
     --dark-grayish-blue: hsl(236, 13%, 42%);
     --very-dark-blue: hsl(240, 100%, 5%);
     --text-font-size: 15px;
@@ -27,9 +27,8 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
 }
-.section-padding{
+.section_padding{
     padding: 20px 100px 10px 100px;
 }
 nav{
@@ -42,4 +41,79 @@ nav p a{
 }
 nav p a:hover{
     color: var(--soft-orange);
+}
+.hero{
+   display: flex; 
+   gap: 1rem;
+}
+.hero_intro{
+    flex-grow: 2.5;
+}
+.hero_intro_text{
+    display: flex;
+    gap: 1rem;
+}
+.hero_intro_text h1{
+    flex: 1;
+    font-size: 45px;
+    font-weight: 800;
+}
+.hero_intro-text-description{
+    flex: 1;
+}
+.hero_intro-text-description button{
+    padding: 10px 18px;
+    border: none;
+    color: var(--off-white);
+    background-color: var(--soft-red);
+    margin-top: 50px;
+    cursor: pointer;
+    transition: background-color 300ms linear;
+
+}
+.hero_intro-text-description button:hover{
+    background-color: var(--very-dark-blue);
+}
+.hero_intro-image img{
+    width: 100%;
+}
+.hero_news{
+    flex-grow: 1;
+    background-color: var(--very-dark-blue);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hero_news h2{
+    color: var(--soft-orange);
+    font-size: 40px;
+}
+.hero_news h3{
+    color: var(--off-white);
+}
+.hero_news p{
+    color: var(--grayish-blue);
+}
+.blogs{
+    display: flex;
+}
+.blog{
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+.blog img{
+    flex: 1;
+    width: 100px;
+}
+.blog-text{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.blog-text span{
+    color: var(--grayish-blue);
+    font-size: 30px;
 }
